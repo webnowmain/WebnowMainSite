@@ -2573,11 +2573,12 @@ section .section-title {
 }
 
 #footer .footer-newsletter form {
-  margin-top: 30px;
+  margin-top: 15px;
   background: #fff;
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
+  margin-bottom: 20px;
 }
 
 #footer .footer-newsletter form input[type=email] {
