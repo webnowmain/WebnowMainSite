@@ -2611,7 +2611,7 @@ section .section-title {
   background: #0d2735;
   border-top: 1px solid #223f4f;
   border-bottom: 1px solid #223f4f;
-  padding: 40px 0 30px 0;
+  padding: 10px 0 30px 0;
 }
 
 #footer .footer-top .footer-info {
@@ -2620,7 +2620,7 @@ section .section-title {
 
 #footer .footer-top .footer-info h3 {
   font-size: 18px;
-  margin: 0 0 20px 0;
+  margin: 20px 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
   color: #a2cce3;
@@ -2661,7 +2661,8 @@ section .section-title {
   font-weight: 600;
   color: #a2cce3;
   position: relative;
-  padding-bottom: 12px;
+  margin-top: 25px;
+  padding-bottom: 10px;
 }
 
 #footer .footer-top .footer-links {
