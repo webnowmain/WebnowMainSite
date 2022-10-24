@@ -297,6 +297,8 @@ input.check-toggle-round-flat:checked + label:after {
   display: flex;
   list-style: none;
   align-items: center;
+  text-decoration: none;
+
 }
 
 .navbar li {
