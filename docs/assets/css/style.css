@@ -113,8 +113,8 @@ h6,
 #main {
   margin-top: 80px;
 }
-.fixed-header {
-  border-radius: -100px;
+#header .fixed-header {
+  width: fit-content;
 }
 /*--------------------------------------------------------------
 # Add On Change language btn
