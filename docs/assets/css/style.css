@@ -298,7 +298,6 @@ input.check-toggle-round-flat:checked + label:after {
   list-style: none;
   align-items: center;
   text-decoration: none;
-
 }
 
 .navbar li {
@@ -330,6 +329,7 @@ input.check-toggle-round-flat:checked + label:after {
 .navbar .active:focus,
 .navbar li:hover>a {
   color: #a2cce3;
+  text-decoration: none;
 }
 
 .navbar .dropdown ul {
@@ -407,6 +407,7 @@ input.check-toggle-round-flat:checked + label:after {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 @media (max-width: 991px) {
