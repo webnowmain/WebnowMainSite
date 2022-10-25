@@ -2730,3 +2730,14 @@ section .section-title {
 #footer .credits a {
   color: #a2cce3;
 }
+
+.legal-marging {
+  padding: 50px 100px 50px 40px;
+}
+
+.index-footer-margin {
+  margin-top: -34px;
+}
+.index-footer-margin-underlink {
+  margin-top: -42px;
+}
