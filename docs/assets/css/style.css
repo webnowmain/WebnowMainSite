@@ -2668,9 +2668,9 @@ section .section-title {
   padding-bottom: 10px;
 }
 
-#footer .footer-top .footer-links {
-  /*--margin-bottom: 30px;--*/
-}
+/*#footer .footer-top .footer-links {
+  --margin-bottom: 30px;
+}--*/
 
 #footer .footer-top .footer-links ul {
   list-style: none;
