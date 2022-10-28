@@ -132,10 +132,6 @@ h6,
   cursor: pointer;
 }
 
-
-
-
-
 .dropbtn, img {
   cursor: pointer;
 }
@@ -458,14 +454,8 @@ input.check-toggle-round-flat:checked + label:after {
   transition: 0.3s;
 }
 .navbar-mobile .dropdown {
-  position: absolute;
   display: block;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
   visibility: visible;
-  background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
