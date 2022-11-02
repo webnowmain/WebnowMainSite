@@ -1855,7 +1855,8 @@ section .section-title {
 
 .frontside .card,
 .backside .card {
-    min-height: 200px;
+    min-height: 220px;
+    width: 400px;
 }
 
 .backside .card a {
