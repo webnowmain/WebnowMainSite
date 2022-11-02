@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,END]    
+
+RewriteRule ^/?index\.html$ /Hjem [R=301,END]
+RewriteRule ^/?Hjem/?$ /index.html [END]
