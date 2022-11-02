@@ -2001,6 +2001,8 @@ section .section-title {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  pointer-events: none;
+  background-color: #49668910;
 }
 
 /*--.contact .php-email-form input::focus,
@@ -2051,14 +2053,9 @@ section .section-title {
 .contact .fade-contact {
   pointer-events: none;
   background-color: #49668931;
-  display: inline-block;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  pointer-events: none;
-  background-color: #49668910;
-}
+
 
 /*--------------------------------------------------------------
 # Map
