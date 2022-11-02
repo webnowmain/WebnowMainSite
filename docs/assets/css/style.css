@@ -1951,7 +1951,7 @@ section .section-title {
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contact .php-email-form .error-message {
@@ -2003,10 +2003,10 @@ section .section-title {
   font-size: 14px;
 }
 
-.contact .php-email-form input::focus,
+/*--.contact .php-email-form input::focus,
 .contact .php-email-form textarea::focus {
   background-color: #68A4C4;
-}
+} --*/
 
 .contact .php-email-form input {
   padding: 10px 15px;
@@ -2046,6 +2046,18 @@ section .section-title {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.contact .fade-contact {
+  pointer-events: none;
+  background-color: #49668931;
+  display: inline-block;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  pointer-events: none;
+  background-color: #49668910;
 }
 
 /*--------------------------------------------------------------
