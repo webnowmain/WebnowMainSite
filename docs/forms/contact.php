@@ -5,9 +5,9 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'alex.smestad@gmail.com';
+  $receiving_email_address = 'kontakt@webnow.no';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
+  if( file_exists($php_email_form = 'assets/vendor/php-email-form/php-email-form.' )) {
     include( $php_email_form );
   } else {
     die( 'Unable to load the "PHP Email Form" Library!');
