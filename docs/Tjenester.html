@@ -65,6 +65,69 @@
     </header><!-- End Header -->
 
   <main id="main">
+      <!-- Modal1 Enkel Nettside -->
+      <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="formModalLabel">Bestill nå</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeXl7SU881FKJnjpqih09YXdJav1x4ZrHqQrhtUFEGzVoOoUg/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Lukk</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bootstrap JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-3lJWGgfQcBx1SVv1zMTgW8JjFz+AK4H4w6JLkW8hI6UZb6+sTfT2M1Y9TnCJT+jG" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+      <!-- Modal2 Avansert Nettside-->
+<div class="modal fade" id="formModal2" tabindex="-1" role="dialog" aria-labelledby="formModalLabel2" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: 1000px; height: 1000px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="formModalLabel2">Bestill nå</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgTA7s9_-Sxed2cae6vFEwcofAVk6-SLffBXWNkTssYA2eJw/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Lukk</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal3 App-->
+<div class="modal fade" id="formModal3" tabindex="-1" role="dialog" aria-labelledby="formModalLabel3" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: 1000px; height: 1000px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="formModalLabel2">Bestill nå</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVlgxoaB21w2MKy97gX28tzYW43Hx7M2TBLdAHsOtWql2F3A/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Laster inn …</iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Lukk</button>
+      </div>
+    </div>
+  </div>
+</div>
      <!-- ======= Our Services Section ======= --->
     <section class="breadcrumbs">
       <div class="container">
@@ -102,17 +165,66 @@
                     <h3></h3>
                     <h4 style="margin-bottom: 0px; margin-top: 0px;" ><span>Enkel Nettside</span></h4>
                     <h4>kr 9.999,-<span>Alt du trenger for en portefølje nettside.</span></h4>
+                    <div id="modal" class="modal">
+                      <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div id="modal-text"></div>
+                      </div>
+                    </div>
                     <ul>
                       <p>Inkluderer:</p>
-                      <li><i class="bx bx-check"></i> Opptil 3 sider</li>
-                      <li><i class="bx bx-check"></i> Kompatibel med mobiltelefon, nettbrett, PC</li>
-                      <li><i class="bx bx-check"></i> Universiell utformet design</li>
-                      <li><i class="bx bx-check"></i> Linket Kontakt Informasjon</li>
-                      <li><i class="bx bx-check"></i> Google Maps integrasjon</li>
-                      <li><i class="bx bx-check"></i> Vi Finner Bilder</li>
-                      <li><i class="bx bx-check"></i> SSL-sertifikat</li>
-                      <li><i class="bx bx-check"></i> Google SEO/Søkemotoroptimalisering</li>
+                      <!-- Popup 1 -->
+                      <li><i class="bx bx-check"></i>
+                          <div class="popup" onclick="togglePopup('popup1')">Opptil 3 sider
+                            <span class="popuptext" id="popup1">Popup 1 text...</span>
+                          </div>
+                        </li>
+                        <!-- Popup 2 -->
+                      <li><i class="bx bx-check"></i>
+                        <div class="popup" onclick="togglePopup('popup2')">Kompatibel med mobiltelefon, nettbrett, PC
+                          <span class="popuptext" id="popup2">Popup 2 text...</span>
+                        </div>
+                      </li>
+                        <!-- Popup 3 -->
+                      <li><i class="bx bx-check"></i>
+                        <div class="popup" onclick="togglePopup('popup3')">Universiell utformet design
+                          <span class="popuptext" id="popup3">Popup 3 text...</span>
+                        </div>
+                      </li>
+                      <!-- Popup 4 -->
+                      <li><i class="bx bx-check"></i>
+                        <div class="popup" onclick="togglePopup('popup4')">SSL-sertifikat
+                          <span class="popuptext" id="popup4">Popup 4 text...</span>
+                        </div>
+                      </li>
+                      <!-- Popup 5 -->
+                      <li><i class="bx bx-check"></i>
+                        <div class="popup" onclick="togglePopup('popup5')">Vi Finner Bilder
+                          <span class="popuptext" id="popup5">Popup 5 text...</span>
+                        </div>
+                      </li>
+                      <!-- Popup 6 -->
+                      <li><i class="bx bx-check"></i>
+                        <div class="popup" onclick="togglePopup('popup6')">Google SEO/Søkemotoroptimalisering
+                          <span class="popuptext" id="popup6">Popup 6 text...</span>
+                        </div>
+                      </li>
+                      <!-- Popup 7 -->
+                      <li><i class="bx bx-check"></i>
+                        <div class="popup" onclick="togglePopup('popup7')">Google Maps integrasjon
+                          <span class="popuptext" id="popup7">Popup 7 text...</span>
+                        </div>
+                      </li>
+                      <!-- Popup 8 -->
+                      <li><i class="bx bx-check"></i>
+                        <div class="popup" onclick="togglePopup('popup8')">Linket Kontakt Informasjon
+                          <span class="popuptext" id="popup8">Popup 8 text...</span>
+                        </div>
+                      </li>
                     </ul>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
+                      Bestill nå
+                    </button>
                   </div>
         
                   <div class="col-lg-4 box featured">
@@ -135,6 +247,9 @@
                       <li><i class="bx bx-check"></i> Google My Business page</li>
                       <li><i class="bx bx-check"></i> Gratis domeneregistrering i 1 år</li>
                     </ul>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal2">
+                      Bestill nå
+                    </button>
                   </div>
 
                   <div class="col-lg-4 box">
@@ -153,6 +268,9 @@
                       <li><i class="bx bx-check"></i> Linket kontaktinformasjon</li>
                       <li><i class="bx bx-check"></i> Universiell utformet</li>
                     </ul>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal3">
+                      Estimer Pris
+                    </button>
                   </div>
                   <!--<div class="col-lg-4 box">
                     <h3></h3>
@@ -613,7 +731,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

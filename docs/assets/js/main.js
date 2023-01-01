@@ -250,3 +250,10 @@ if (!event.target.matches('.dropbtn')) {
   }
 }
 }
+
+//new
+
+function togglePopup(popupId) {
+  var popup = document.getElementById(popupId);
+  popup.classList.toggle("show");
+}
