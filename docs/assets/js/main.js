@@ -252,8 +252,27 @@ if (!event.target.matches('.dropbtn')) {
 }
 
 //new
-
 function togglePopup(popupId) {
   var popup = document.getElementById(popupId);
   popup.classList.toggle("show");
 }
+
+window.addEventListener('click', function(e) {
+  var allPopups = document.querySelectorAll('.popup.show');
+  for (var i = 0; i < allPopups.length; i++) {
+    if (allPopups[i] !== e.target && !allPopups[i].contains(e.target)) {
+      allPopups[i].classList.remove('show');
+    }
+  }
+  if (!e.target.matches('.popup')) {
+    var dropdowns = document.getElementsByClassName("popuptext");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+});
+
+

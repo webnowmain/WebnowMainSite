@@ -2768,6 +2768,10 @@ section .section-title {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  z-index: 2;
+}
+.popup:hover{
+  color: #79add1;
 }
 
 /* The actual popup (appears on top) */
