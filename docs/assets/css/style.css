@@ -2773,12 +2773,12 @@ section .section-title {
 /* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
-  width: 160px;
+  width: 300px;
   background-color: #555;
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 8px 0;
+  padding: 10px 10px;
   position: absolute;
   z-index: 1;
   bottom: 125%;
@@ -2791,7 +2791,7 @@ section .section-title {
   content: "";
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 30%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
