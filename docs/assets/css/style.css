@@ -592,7 +592,7 @@ input.check-toggle-round-flat:checked + label:after {
 #hero .btn-get-started {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
