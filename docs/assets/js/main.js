@@ -275,4 +275,28 @@ window.addEventListener('click', function(e) {
   }
 });
 
+//google forms integrasjon scroll desabled when popup open
+// Få tak i alle modalvinduene
+var modals = document.querySelectorAll('.modal');
 
+// Deaktiver skrolling på nettsiden når et modalvindu vises
+modals.forEach(function (modal) {
+  modal.addEventListener('show.bs.modal', function () {
+    document.body.style.overflow = 'hidden';
+  });
+
+  // Aktiver skrolling på nettsiden når et modalvindu lukkes
+  modal.addEventListener('hide.bs.modal', function () {
+    document.body.style.overflow = 'auto';
+  });
+});
+
+// Deaktiver skrolling på nettsiden når et modalvindu vises
+$('.modal').on('shown.bs.modal', function () {
+  $('body').css('overflow', 'hidden');
+});
+
+// Aktiver skrolling på nettsiden når et modalvindu lukkes
+$('.modal').on('hidden.bs.modal', function () {
+  $('body').css('overflow', 'auto');
+});
