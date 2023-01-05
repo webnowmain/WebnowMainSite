@@ -300,3 +300,62 @@ $('.modal').on('shown.bs.modal', function () {
 $('.modal').on('hidden.bs.modal', function () {
   $('body').css('overflow', 'auto');
 });
+
+
+//FAQ
+$(document).ready(function() {
+  // Vis og skjul svar når spørsmål klikkes på
+  $(".faq-question h3").click(function() {
+    $(this).siblings(".faq-answer").slideToggle();
+  });
+
+  // Filtrer spørsmål etter kategori når dropdown-valg endres
+  $("#faq-category-select").change(function() {
+    var selectedCategory = $(this).val();
+    if (selectedCategory === "all") {
+      $(".faq-question").show();
+    } else {
+      $(".faq-question").hide();
+      $(".faq-question[data-category='" + selectedCategory + "']").show();
+    }
+  });
+
+  // Vis alle spørsmål når "vis alle"-knappen klikkes på
+  $("#faq-reset-button").click(function() {
+    $("#faq-category-select").val("all");
+    $(".faq-question").show();
+  });
+});
+
+// Søk i FAQen
+$(document).ready(function() {
+  function searchFaq() {
+    // Hent søkebegrepet fra søkefeltet
+    var searchTerm = $("#faq-search").val().toLowerCase();
+    // Gå gjennom alle spørsmålene og svarene i FAQ-en
+    $(".faq-question").each(function() {
+      var question = $(this).find(".faq-title").text().toLowerCase();
+      var answer = $(this).find(".faq-answer").text().toLowerCase();
+      if (question.indexOf(searchTerm) !== -1 || answer.indexOf(searchTerm) !== -1) {
+        // Fjern <span>-taggene fra spørsmål og svar
+        $(this).find(".faq-title .faq-highlight").contents().unwrap();
+        $(this).find(".faq-answer .faq-highlight").contents().unwrap();
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  }
+
+  $("#faq-search").on("keyup", searchFaq);
+});
+
+if (searchTerm === "") {
+  // Reset searchbaren og vis alle FAQ-ene igjen
+  $("#faq-search").val("");
+  $(".faq").show();
+}
+
+$("#faq-search + i").click(function() {
+  $("#faq-search").click();
+});

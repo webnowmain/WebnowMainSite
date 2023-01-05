@@ -22,6 +22,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -307,6 +310,47 @@
     </section>
       End Why Us Section -->
        
+      <div id="faq">
+        <h2>FAQ</h2>
+        <input type="text" id="faq-search" placeholder="Søk i FAQ">
+        <button id="faq-search-button"><i class="fas fa-search"></i></button>
+        <div id="faq-filters">
+          <!--<select id="faq-category-select">
+            <option value="all">Vis alle</option>
+            <option value="category1">Webutvikling</option>
+            <option value="category2">Apputvikling</option>
+            <option value="category3">Annet...</option>
+          </select>--> <br>
+          <button id="faq-reset-button">Vis alle</button>
+        </div>
+        <div class="faq-question" data-category="category1">
+          <h3 class="faq-title">Hva kan dere hjelpe oss med?</h3>
+          <p class="faq-answer">Vi tilbyr tjenester innen utvikling av nettsider, nettbutikker, apper og systemløsninger. Vi kan også hjelpe med vedlikehold, oppdateringer og redesign av eksisterende løsninger.</p>
+        </div>
+        <div class="faq-question" data-category="category1">
+          <h3 class="faq-title">Har dere noen spesielle ferdigheter eller kompetanseområder?</h3>
+          <p class="faq-answer">Vi har erfaring med en rekke ulike teknologier og plattformer, som WordPress, Magento, Shopify, React, Angular, Node.js, PHP, Java og .NET. Vi jobber også med responsivt design og søkemotoroptimalisering.</p>
+        </div>
+        <div class="faq-question" data-category="category2">
+          <h3 class="faq-title">Hvordan kan vi begynne å jobbe sammen med dere?</h3>
+          <p class="faq-answer">Du kan sende oss en forespørsel via vår kontaktside, og vi vil komme tilbake til deg så fort som mulig for å diskutere dine behov og ønsker. Deretter kan vi lage et tilbud på en løsning som passer for deg.</p>
+        </div>
+        <div class="faq-question" data-category="category2">
+          <h3 class="faq-title">Tilbyr dere også vedlikehold og oppdateringer av eksisterende nettsider?</h3>
+          <p class="faq-answer">Ja, vi tilbyr vedlikehold og oppdateringer av eksisterende nettsider, slik at du kan holde din nettside oppdatert og sikker. Kontakt oss for å høre mer om hva vi kan tilby.</p>
+        </div>      
+          <div class="faq-question" data-category="category3">
+            <h3 class="faq-title">Hva koster det å få laget en nettside?</h3>
+            <p class="faq-answer">Prisen på en nettside avhenger av mange faktorer, som størrelse, kompleksitet, design, funksjonalitet og integrasjoner. Vi kan lage et tilbud basert på dine spesifikke behov og ønsker.</p>
+          </div>
+          <div class="faq-question" data-category="category3">
+            <h3 class="faq-title">Hva slags betalingsmåter godtar dere?</h3>
+            <p class="faq-answer">Vi godtar betaling via bankoverføring, Vipps, PayPal og kredittkort (via Stripe).</p>
+          </div>
+        </div>
+        
+      
+      
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
