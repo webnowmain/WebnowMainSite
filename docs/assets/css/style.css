@@ -2820,3 +2820,92 @@ section .section-title {
   from {opacity: 0;}
   to {opacity:1 ;}
 }
+
+/*FAQ*/
+#faq {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#faq h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#faq-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#faq-filters select {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  color: #444;
+}
+
+#faq-filters button {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.faq-question {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.faq-question p {
+  margin: 10px 0 0;
+  display: none;
+}
+
+.faq-highlighted {
+  background-color: #ffc;
+}
+.faq-highlight {
+  background-color: #ffc;
+  font-weight: bold;
+  border: 1px solid #ccc;
+}
+
+
+@media (max-width: 768px) {
+  #faq {
+    width: 100%;
+  }
+  #faq-filters select {
+    width: 100%;
+  }
+  #faq-filters button {
+    width: 100%;
+  }
+}
+
+#faq-search {
+  padding-right: 30px; /* La plass til ikonet */
+}
+
+#faq-search + i {
+  position: absolute; /* Gjør ikonet til en absolutt posisjonert element */
+  right: 10px; /* Plasser ikonet til høyre for searchboksen */
+  top: 50%; /* Sentrer ikonet vertikalt */
+  transform: translateY(-50%); /* Sentrer ikonet vertikalt */
+  cursor: pointer; /* Endre musepekeren til en pekefinger når ikonet hovers over */
+}
+
