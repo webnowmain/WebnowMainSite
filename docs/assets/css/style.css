@@ -1343,11 +1343,11 @@ section {
   margin-left: -30px;
   overflow: hidden;
   z-index: 9;
-  border-radius: 0;
+  border-radius: 15px;
 }
 
 .service-details .card-img img {
-  max-width: 100%;
+  width: 100%;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1389,7 +1389,7 @@ section {
 }
 
 .service-details .card:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .service-details .card:hover .card-body {
@@ -2642,7 +2642,7 @@ section .section-title {
   background: #0d2735;
   border-top: 1px solid #223f4f;
   border-bottom: 1px solid #223f4f;
-  padding: 10px 0 30px 0;
+  padding: 10px 0;
 }
 
 #footer .footer-top .footer-info {
